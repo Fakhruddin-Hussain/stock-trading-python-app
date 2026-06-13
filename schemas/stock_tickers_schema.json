@@ -1,0 +1,115 @@
+{
+  "table": {
+    "database": "STOCK_TRADING",
+    "schema": "PUBLIC",
+    "name": "STOCK_TICKERS"
+  },
+  "columns": [
+    {
+      "name": "TICKER",
+      "snowflake_type": "VARCHAR",
+      "source_field": "ticker",
+      "required": true,
+      "nullable": false
+    },
+    {
+      "name": "NAME",
+      "snowflake_type": "VARCHAR",
+      "source_field": "name",
+      "required": false,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "MARKET",
+      "snowflake_type": "VARCHAR",
+      "source_field": "market",
+      "required": false,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "LOCALE",
+      "snowflake_type": "VARCHAR",
+      "source_field": "locale",
+      "required": false,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "PRIMARY_EXCHANGE",
+      "snowflake_type": "VARCHAR",
+      "source_field": "primary_exchange",
+      "required": false,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "TYPE",
+      "snowflake_type": "VARCHAR",
+      "source_field": "type",
+      "required": false,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "ACTIVE",
+      "snowflake_type": "BOOLEAN",
+      "source_field": "active",
+      "required": false,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "CURRENCY_NAME",
+      "snowflake_type": "VARCHAR",
+      "source_field": "currency_name",
+      "required": false,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "name": "CIK",
+      "snowflake_type": "VARCHAR",
+      "source_field": "cik",
+      "required": false,
+      "nullable": true,
+      "default": null,
+      "empty_string_to_null": true
+    },
+    {
+      "name": "COMPOSITE_FIGI",
+      "snowflake_type": "VARCHAR",
+      "source_field": "composite_figi",
+      "required": false,
+      "nullable": true,
+      "default": null,
+      "empty_string_to_null": true
+    },
+    {
+      "name": "SHARE_CLASS_FIGI",
+      "snowflake_type": "VARCHAR",
+      "source_field": "share_class_figi",
+      "required": false,
+      "nullable": true,
+      "default": null,
+      "empty_string_to_null": true
+    },
+    {
+      "name": "LAST_UPDATED_UTC",
+      "snowflake_type": "TIMESTAMP_NTZ",
+      "source_field": "last_updated_utc",
+      "required": false,
+      "nullable": true,
+      "default": null,
+      "timezone": "UTC"
+    },
+    {
+      "name": "DS",
+      "snowflake_type": "DATE",
+      "generated": "run_date",
+      "required": true,
+      "nullable": false
+    }
+  ]
+}
